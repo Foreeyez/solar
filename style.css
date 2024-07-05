@@ -1,0 +1,91 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 20px rgba(255, 255, 0, 0.5);
+    animation: spin 10s linear infinite;
+    position: relative;
+  }
+  
+  .planet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    animation: orbit linear infinite;
+  }
+  
+  .mercury {
+    animation-duration: 5s;
+    top: 50%;
+    left: 35%;
+  }
+  
+  .venus {
+    animation-duration: 8s;
+    top: 50%;
+    left: 30%;
+  }
+  
+  .earth {
+    animation-duration: 12s;
+    top: 50%;
+    left: 25%;
+  }
+  
+  .mars {
+    animation-duration: 18s;
+    top: 50%;
+    left: 20%;
+  }
+  
+  .jupiter {
+    animation-duration: 30s;
+    top: 50%;
+    left: 15%;
+  }
+  
+  .saturn {
+    animation-duration: 40s;
+    top: 50%;
+    left: 10%;
+  }
+  
+  .uranus {
+    animation-duration: 50s;
+    top: 50%;
+    left: 5%;
+  }
+  
+  .neptune {
+    animation-duration: 60s;
+    top: 50%;
+    left: 0%;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes orbit {
+    from {
+      transform: translateX(100px) rotate(0deg) translateX(-100px);
+    }
+    to {
+      transform: translateX(100px) rotate(360deg) translateX(-100px);
+    }
+  }
+  
